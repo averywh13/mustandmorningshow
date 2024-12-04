@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(34, 34, 82);
+    background-color: rgb(38, 53, 97);
 }
 .navbar {
     z-index: 2;
@@ -40,4 +40,21 @@ body {
 }
 .navbar-toggler-icon {
     border-radius: 5px;
+}
+.container1 {
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
+.leftpic {
+    height: 100vh;
+    width: auto;
+    position: absolute;
+    left: 0;
+}
+.yellow {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 246, 70);
 }
