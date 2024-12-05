@@ -1,6 +1,7 @@
 body {
     background-color: rgb(38, 53, 97);
 }
+
 .navbar {
     z-index: 2;
     font-size: 25px;
@@ -8,11 +9,13 @@ body {
     font-weight: 300;
     font-style: normal;
 }
+
 .nav-link {
     position: relative;
     text-decoration: none;
     overflow: hidden;
 }
+
 .nav-link::before {
     content: '';
     position: absolute;
@@ -23,24 +26,33 @@ body {
     background-color: transparent;
     transition: right 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+
 .nav-link:hover::before {
     right: 0;
     background-color: rgb(194, 194, 19);
 }
+
 .navbar {
-    background: none;
+    background: rgb(25, 25, 91);
 }
+
 .navbar-nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
+
 .nav-item {
     margin: 0 10px;
 }
+
 .navbar-toggler-icon {
     border-radius: 5px;
 }
+
 .container1 {
     height: 100%;
     display: flex;
@@ -52,9 +64,27 @@ body {
     width: auto;
     position: absolute;
     left: 0;
+    margin-left: 50px;
 }
+
 .yellow {
-    width: 100px;
-    height: 100px;
+    width: 1500px;
+    height: 700px;
     background-color: rgb(255, 246, 70);
+    margin-left: 1000px;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.stacked-words {
+    font-size: 7rem;
+    line-height: 1.5;
+    writing-mode: horizontal-tb;
+    transform: translateX(20px);
+    font-family: "macula-solid", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
