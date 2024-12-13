@@ -1,5 +1,6 @@
 body {
     background-color: rgb(38, 53, 97);
+    margin-bottom: 450px;
 }
 
 .navbar {
@@ -85,8 +86,8 @@ body {
     writing-mode: horizontal-tb;
     transform: translateX(20px);
     font-family: "matrix-ii", serif;
-font-weight: 800;
-font-style: normal;
+    font-weight: 800;
+    font-style: normal;
 }
 
 ::-webkit-scrollbar {
@@ -106,8 +107,33 @@ font-style: normal;
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(193, 178, 14);
 }
-li{
+
+li {
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.dropdown {
+    background-color: rgb(243, 233, 46);
+    width: 825px;
+    height: 300px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 2.5rem;
+    margin-top: 100px;
+}
+.dropdown:hover {
+    background-color: rgb(153, 147, 32);
+    color: white;
+}
+.dropdown:focus {
+    background-color:rgb(153, 147, 32);
+    color: white;
+}
+.dropdown-menu{
+    width: 550px;
+    text-align: center;
 }
