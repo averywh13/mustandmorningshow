@@ -137,3 +137,6 @@ li {
     width: 550px;
     text-align: center;
 }
+.item {
+    cursor: not-allowed
+}
