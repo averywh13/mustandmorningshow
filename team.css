@@ -1,0 +1,203 @@
+body {
+    background-color: rgb(38, 53, 97);
+}
+
+.navbar {
+    z-index: 2;
+    font-size: 25px;
+    font-family: "basic-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: right 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.nav-link:hover::before {
+    right: 0;
+    background-color: rgb(194, 194, 19);
+}
+
+.navbar {
+    background: rgb(25, 25, 91);
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.navbar-toggler-icon {
+    border-radius: 5px;
+}
+
+.container1 {
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
+.leftpic {
+    height: 100vh;
+    width: auto;
+    position: absolute;
+    left: 0;
+    margin-left: 50px;
+}
+
+.yellow {
+    width: 1500px;
+    height: 700px;
+    background-color: rgb(255, 246, 70);
+    margin-left: 1000px;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.stacked-words {
+    font-size: 7rem;
+    line-height: 1.5;
+    writing-mode: horizontal-tb;
+    transform: translateX(20px);
+    font-family: "matrix-ii", serif;
+font-weight: 800;
+font-style: normal;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 237, 35);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(193, 178, 14);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 320px;
+    margin-top: 200px;
+  }
+  
+  .portfolio h2 {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 50px auto 30px;
+    text-transform: uppercase;
+    font-size: 5rem;
+    letter-spacing: 15px;
+    color: #ffffff;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  .card {
+    width: 25%;
+    overflow: hidden;
+    position: relative;
+  }
+  .card .content {
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    bottom: -100px;
+    transition: all 0.7s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 100px;
+    background: #111;
+  }
+  .card .image {
+    z-index: 1;
+    height: 100%;
+  }
+  .card img {
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s ease;
+    transform: scale(1.2);
+  }
+  
+  .card:hover .content {
+    bottom: 0px;
+    color: #fff;
+  }
+  
+  .card:hover .image img {
+    transform: scale(1);
+  }
+  
+  .card .content span:first-child {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .card .content span:last-child {
+    font-size: 14px;
+    color: #18cfab;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .card {
+    width: 50%;
+    }
+    .card .content {
+      bottom: 0;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .card {
+    width: 100%;
+    }
+  }
