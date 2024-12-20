@@ -13,15 +13,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <script>
-        (function(d) {
-          var config = {
-            kitId: 'weo7xzf',
-            scriptTimeout: 3000,
-            async: true
-          },
-          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        (function (d) {
+            var config = {
+                kitId: 'weo7xzf',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
         })(document);
-      </script>
+    </script>
 </head>
 
 <body>
@@ -36,28 +36,37 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="text-white nav-link" href="sports.html">Sports</a>
+                        <a class="text-white nav-link" href="sports.html">SPORTS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="text-white nav-link" href="team.html">Team</a>
+                        <a class="text-white nav-link" href="team.html">TEAM</a>
                     </li>
                     <li class="nav-item">
-                        <a class="text-white nav-link" href="#.html">Weather</a>
+                        <a class="text-white nav-link" href="#.html">EPISODES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="text-white nav-link" href="#.html">Episodes</a>
+                        <a class="text-white nav-link" href="#.html">BEHIND THE SCENES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="text-white nav-link" href="#.html">Behind the Scenes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="text-white nav-link" href="#.html">Schedule</a>
+                        <a class="text-white nav-link" href="#.html">SCHEDULE</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- navbar -->
+
+    <a class="weatherwidget-io" href="https://forecast7.com/en/40d34n74d27/marlboro-township/?unit=us"
+    data-label_1="MARLBORO" data-label_2="WEATHER" data-font="Open Sans" data-icons="Climacons Animated"
+    data-theme="clear" data-basecolor="#323b5d" data-accent="#435288" data-textcolor="#ffffff"
+    data-cloudcolor="#ffffff">MARLBORO WEATHER</a>
+
+
+
+
+
+
+
     <div class="container container1">
         <div class="row">
             <div class="col-xs-12">
@@ -95,8 +104,7 @@
         </div>
     </div>
 
-
-
+    
 
 
 
@@ -142,6 +150,9 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script>
+            !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+        </script>
 </body>
 
 </html>
