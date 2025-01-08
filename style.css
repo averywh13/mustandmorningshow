@@ -193,3 +193,6 @@ body {
     transition-delay: 0.2s;
 }
 
+.fadecontainer{
+    display: inline;
+}
