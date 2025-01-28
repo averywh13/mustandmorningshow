@@ -53,18 +53,14 @@ body {
     border-radius: 5px;
 }
 
-.container1 {
-    height: 100%;
-    display: flex;
-    align-items: stretch;
+.container{
+    margin-left:0;
 }
 
 .leftpic {
-    height: 100vh;
-    width: auto;
-    position: absolute;
-    left: 0;
-    margin-left: 50px;
+    max-width: 100%;
+    margin-left: 0;
+
 }
 
 .yellow {
