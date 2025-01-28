@@ -67,11 +67,6 @@ body {
     width: 1500px;
     height: 700px;
     background-color: rgb(255, 246, 70);
-    margin-left: 1000px;
-    margin-top: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
 }
 
 
