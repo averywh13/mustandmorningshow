@@ -64,14 +64,13 @@ body {
 }
 
 .yellow {
-    width: 1500px;
-    height: 700px;
+    max-width: 100%;
     background-color: rgb(255, 246, 70);
 }
 
 
 .stacked-words {
-    font-size: 7rem;
+    font-size: 60px;
     line-height: 1.5;
     writing-mode: horizontal-tb;
     transform: translateX(20px);
