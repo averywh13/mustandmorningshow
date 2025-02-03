@@ -53,29 +53,19 @@ body {
     border-radius: 5px;
 }
 
-.container1 {
-    height: 100%;
-    display: flex;
-    align-items: stretch;
+.container1{
+    margin-left:0;
 }
 
 .leftpic {
-    height: 100vh;
-    width: auto;
-    position: absolute;
-    left: 0;
-    margin-left: 50px;
+    max-width: 100%;
+    margin-left: 0;
+
 }
 
 .yellow {
-    width: 1500px;
-    height: 700px;
+    max-width: 100%;
     background-color: rgb(255, 246, 70);
-    margin-left: 1000px;
-    margin-top: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
 }
 
 
