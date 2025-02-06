@@ -53,31 +53,16 @@ body {
     border-radius: 5px;
 }
 
-.container1{
-    margin-left:0;
+.container{
+  margin-left:0;
 }
 
 .leftpic {
-    max-width: 100%;
-    margin-left: 0;
+  max-width: 100%;
+  margin-left: 0;
 
 }
 
-.yellow {
-    max-width: 100%;
-    background-color: rgb(255, 246, 70);
-}
-
-
-.stacked-words {
-    font-size: 7rem;
-    line-height: 1.5;
-    writing-mode: horizontal-tb;
-    transform: translateX(20px);
-    font-family: "matrix-ii", serif;
-font-weight: 800;
-font-style: normal;
-}
 
 ::-webkit-scrollbar {
     width: 20px;
@@ -106,6 +91,7 @@ font-style: normal;
     flex-wrap: wrap;
     min-width: 320px;
     margin-top: 200px;
+    text-align: center;
   }
   
   .portfolio h2 {
@@ -121,7 +107,7 @@ font-style: normal;
     font-style: normal;
   }
   .card {
-    width: 25%;
+    width: 14%;
     overflow: hidden;
     position: relative;
   }
