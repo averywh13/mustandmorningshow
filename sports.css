@@ -63,10 +63,9 @@ body {
     margin-left: 0;
 
 }
-
-.yellow {
-    max-width: 100%;
-    background-color: rgb(255, 246, 70);
+.rightpic{
+    width: 950px;
+    height: 550px;
 }
 
 
@@ -106,7 +105,7 @@ li {
     font-size: 1.5rem;
 }
 .dropdown {
-    background-color: rgb(243, 233, 46);
+    background-color: rgb(255, 246, 82);
     width: 825px;
     height: 300px;
     font-family: "Quicksand", sans-serif;

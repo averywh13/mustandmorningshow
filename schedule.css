@@ -61,9 +61,11 @@ body {
 .leftpic {
     max-width: 100%;
     margin-left: 0;
-
 }
-
+.rightpic{
+    width: 950px;
+    height: 550px;
+}
 ::-webkit-scrollbar {
     width: 20px;
 }

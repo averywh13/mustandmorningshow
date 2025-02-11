@@ -66,8 +66,9 @@ body {
     margin-left: 0;
 
 }
-.card-container{
-    text-align: center;
+.rightpic{
+    width: 950px;
+    height: 550px;
 }
 ::-webkit-scrollbar {
     width: 20px;
