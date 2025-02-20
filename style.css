@@ -94,7 +94,7 @@ body {
 
 #photoBooth {
     padding: 25px; /* Increased padding for better spacing */
-    max-width: 500px; /* Increased max-width for larger display */
+    max-width: 800px; /* Increased max-width for larger display */
     width: 90%; /* Keeps width responsive */
     margin: auto;
     background-color: rgba(255, 255, 255, 0.9);
@@ -130,8 +130,8 @@ body {
 
 /* Style for the 'More Content' indicator */
 .moreIndicator {
-    height: 50px; /* Adjust size for a balanced look */
-    width: 50px;
+    height: 100px; /* Adjust size for a balanced look */
+    width: 100px;
     cursor: pointer;
     transition: transform 0.3s ease; /* Smooth rotation transition */
     /* Add initial rotation styling here */
@@ -139,8 +139,8 @@ body {
 
 /* Navigation button styles */
 #nav img {
-    height: 50px; /* Adjust button size for responsiveness */
-    width: 50px;
+    height: 100px; /* Adjust button size for responsiveness */
+    width: 100px;
     cursor: pointer;
     transition: opacity 0.3s; /* Optional: Add hover effect */
 }
@@ -161,12 +161,6 @@ body {
 /* Style for each paragraph in details */
 .details p {
     margin: 10px 0;
-}
-
-/* Add CSS styles to rotate the element 90deg
-Make it animate nicely. You'll need CSS3 for this */
-.rot90 {
-    transform: rotate(90deg)
 }
 
 /* Add CSS styles to rotate the element 180deg
