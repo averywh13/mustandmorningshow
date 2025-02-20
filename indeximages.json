@@ -2,68 +2,43 @@
     "images": [
         {
             "imgPath": "imgs/images.jpg",
-            "imgName": "Announcement Name",
-            "description": "..."
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi atque delectus dolores amet at mollitia, minus sit perferendis voluptatum et."
+        },
+        {
+            "imgPath": "imgs/vhagar2.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi atque delectus dolores amet at mollitia, minus sit perferendis voluptatum et."
         },
         {
             "imgPath": "imgs/images.jpg",
-            "imgName": "Announcement Name",
-            "description": "..."
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi atque delectus dolores amet at mollitia, minus sit perferendis voluptatum et."
+        },
+        {
+            "imgPath": "imgs/cannibal2.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi atque delectus dolores amet at mollitia, minus sit perferendis voluptatum et."
         },
         {
             "imgPath": "imgs/images.jpg",
-            "imgName": "Announcement Name",
-            "description": "..."
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi atque delectus dolores amet at mollitia, minus sit perferendis voluptatum et."
+        },
+        {
+            "imgPath": "imgs/sheepstealer2.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi atque delectus dolores amet at mollitia, minus sit perferendis voluptatum et."
         },
         {
             "imgPath": "imgs/images.jpg",
-            "imgName": "Announcement Name",
-            "description": "..."
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi atque delectus dolores amet at mollitia, minus sit perferendis voluptatum et."
+        },
+        {
+            "imgPath": "imgs/dreamfyre2.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi atque delectus dolores amet at mollitia, minus sit perferendis voluptatum et."
         },
         {
             "imgPath": "imgs/images.jpg",
-            "imgName": "Announcement Name",
-            "description": "..."
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi atque delectus dolores amet at mollitia, minus sit perferendis voluptatum et."
         },
         {
-            "imgPath": "imgs/images.jpg",
-            "imgName": "Announcement Name",
-            "description": "..."
-        },
-        {
-            "imgPath": "imgs/images.jpg",
-            "imgName": "Announcement Name",
-            "description": "..."
-        },
-        {
-            "imgPath": "imgs/images.jpg",
-            "imgName": "Announcement Name",
-            "description": "..."
-        },
-        {
-            "imgPath": "imgs/images.jpg",
-            "imgName": "Announcement Name",
-            "description": "..."
-        },
-        {
-            "imgPath": "imgs/images.jpg",
-            "imgName": "Announcement Name",
-            "description": "..."
-        },
-        {
-            "imgPath": "imgs/images.jpg",
-            "imgName": "Announcement Name",
-            "description": "..."
-        },
-        {
-            "imgPath": "imgs/images.jpg",
-            "imgName": "Announcement Name",
-            "description": "..."
-        },
-        {
-            "imgPath": "imgs/images.jpg",
-            "imgName": "Announcement Name",
-            "description": "..."
+            "imgPath": "imgs/meleys2.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi atque delectus dolores amet at mollitia, minus sit perferendis voluptatum et."
         }
   ]
 }
