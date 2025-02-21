@@ -1,78 +1,53 @@
-let mCurrentIndex = 0; // Tracks the current image index
-let mImages = []; // Array to hold GalleryImage objects
-const mUrl = 'indeximages.json'; // Replace with actual JSON URL
-const mWaitTime = 60000; // Timer interval in milliseconds
+document.addEventListener('DOMContentLoaded', function() {
+  // Define arrays for images (keeping this in JavaScript)
+  const images = [
+    'https://via.placeholder.com/150',
+    'https://via.placeholder.com/150/ff0000',
+    'https://via.placeholder.com/150/00ff00'
+  ];
 
+  // Load JSON file to change card text dynamically
+  fetch('index.json')
+    .then(response => response.json())
+    .then(data => {
+      const cards = data.cards;
+      const cards2 = data.cards2;
+      const cards3 = data.cards3;
 
+      // Set card text from JSON
+      document.getElementById('cardTitle1').innerText = cards[0].title;
+      document.getElementById('cardText1').innerText = cards[0].text;
+      document.getElementById('cardButton1').innerText = cards[0].buttonText;
 
+      document.getElementById('cardTitle2').innerText = cards2[1].title;
+      document.getElementById('cardText2').innerText = cards2[1].text;
+      document.getElementById('cardButton2').innerText = cards2[1].buttonText;
 
+      document.getElementById('cardTitle3').innerText = cards3[2].title;
+      document.getElementById('cardText3').innerText = cards3[2].text;
+      document.getElementById('cardButton3').innerText = cards3[2].buttonText;
 
-$(document).ready(() => {
-  $('.details').hide();
-  startTimer();
-  $('.moreIndicator').on('click', () => {
-    $('.moreIndicator').toggleClass('rot90');
-    $('.details').slideToggle();
-  })
-  $('#nextPhoto').on('click', () => {
-    showNextPhoto();
-  })
-  $('#prevPhoto').on('click', () => {
-    showPrevPhoto();
-  })
-  fetchJSON()
-})
+      // Event listeners for next and prev buttons (for all three carousels)
+      const carousels = ['carouselExample1', 'carouselExample2', 'carouselExample3'];
+      carousels.forEach((carousel, index) => {
+        const nextButton = document.querySelector(`#${carousel} .carousel-control-next`);
+        const prevButton = document.querySelector(`#${carousel} .carousel-control-prev`);
+        
+        let currentIndex = 0;
+        nextButton.addEventListener('click', function() {
+          currentIndex = (currentIndex + 1) % images.length;
+          document.getElementById(`cardTitle${index + 1}`).innerText = cards[currentIndex].title;
+          document.getElementById(`cardText${index + 1}`).innerText = cards[currentIndex].text;
+          document.getElementById(`cardButton${index + 1}`).innerText = cards[currentIndex].buttonText;
+        });
 
-// Function to fetch JSON data and store it in mImages
-function fetchJSON() {
-  $.ajax({
-    type: 'GET',
-    url: mUrl,
-    success: function (data) {
-      mImages = data.images;
-      swapPhoto();
-    },
-    error: function () {
-      console.log('Connection error.');
-    }
-  });
-}
-
-// Function to swap and display the next photo in the slideshow
-function swapPhoto() {
-  let theData = mImages[mCurrentIndex];
-  $('#photo').attr('src', theData.imgPath);
-  $('#description').text(`${theData.description}`);
-}
-
-// Advances to the next photo, loops to the first photo if the end of array is reached
-function showNextPhoto() {
-  mCurrentIndex++;
-  if (mCurrentIndex === 10) {
-    mCurrentIndex = 0;
-  }
-  swapPhoto()
-  console.log(mCurrentIndex);
-  resetTimer();
-}
-
-// Goes to the previous photo, loops to the last photo if mCurrentIndex goes negative
-function showPrevPhoto() {
-  mCurrentIndex--;
-  if (mCurrentIndex === -1) {
-    mCurrentIndex = 9;
-  }
-  swapPhoto()
-  console.log(mCurrentIndex);
-  resetTimer();
-}
-
-// Starter code for the timer function
-let interval;
-function startTimer() {
-  interval = setInterval(showNextPhoto, mWaitTime);
-}
-function resetTimer() {
-  clearInterval(interval);
-  startTimer()
-}
+        prevButton.addEventListener('click', function() {
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+          document.getElementById(`cardTitle${index + 1}`).innerText = cards[currentIndex].title;
+          document.getElementById(`cardText${index + 1}`).innerText = cards[currentIndex].text;
+          document.getElementById(`cardButton${index + 1}`).innerText = cards[currentIndex].buttonText;
+        });
+      });
+    })
+    .catch(error => console.error('Error loading JSON:', error));
+});
