@@ -23,12 +23,6 @@ $(document).ready(() => {
   fetchJSON()
 })
 
-
-
-
-
-
-
 // Function to fetch JSON data and store it in mImages
 function fetchJSON() {
   $.ajax({
@@ -44,23 +38,12 @@ function fetchJSON() {
   });
 }
 
-
-
-
-
-
 // Function to swap and display the next photo in the slideshow
 function swapPhoto() {
   let theData = mImages[mCurrentIndex];
   $('#photo').attr('src', theData.imgPath);
   $('#description').text(`${theData.description}`);
 }
-
-
-
-
-
-
 
 // Advances to the next photo, loops to the first photo if the end of array is reached
 function showNextPhoto() {
@@ -73,12 +56,6 @@ function showNextPhoto() {
   resetTimer();
 }
 
-
-
-
-
-
-
 // Goes to the previous photo, loops to the last photo if mCurrentIndex goes negative
 function showPrevPhoto() {
   mCurrentIndex--;
@@ -89,10 +66,6 @@ function showPrevPhoto() {
   console.log(mCurrentIndex);
   resetTimer();
 }
-
-
-
-
 
 // Starter code for the timer function
 let interval;
