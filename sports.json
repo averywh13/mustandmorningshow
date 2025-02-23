@@ -234,6 +234,26 @@
             ]
           },
           {
+            "name": "Competition Dance",
+            "cards": [
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is a competition dance card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is another competition dance card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "Yet another competition dance card description."
+              }
+            ]
+          },
+          {
             "name": "Ice Hockey",
             "cards": [
               {
