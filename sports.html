@@ -73,7 +73,7 @@
 
 
 
-    <div class="allbtns text-center">
+    <!-- <div class="allbtns text-center">
         <div class="btn-group">
             <button class="btn dropdown-toggle dropdown mx-2" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -168,35 +168,48 @@
                         Girls</a></li>
             </ul>
         </div>
-    </div>
+    </div> -->
     <!-- need to find out cheer and dance websites, need updated 2024/2025 for spring sports, track/field for both need updated girls/boys lists, add href back when a website is found for cheer/dance -->
-
-    <div class="card-container container">
-        <div class="row text-center">
-            <div class="card col-3 me-4 text-white" style="width: 18rem; background-color: rgb(14, 14, 48);">
-                <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">SPORTS HIGHLIGHT</p>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="container1">
+                <!-- Row for Season Buttons -->
+                <div class="row justify-content-center mt-5">
+                    <div class="col-12 col-lg-3 justify-content-center">
+                        <button onclick="fallSport()" class="fs-2 btn button text-white border-4">
+                            Fall Sports
+                        </button>
+                    </div>
+                    <div class="col-12 col-lg-3 mx-5">
+                        <button onclick="winterSport()" class="fs-2 btn button text-white border-4">
+                            Winter Sports
+                        </button>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <button onclick="springSport()" class="fs-2 btn button text-white border-4">
+                            Spring Sports
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <div class="card col-3 me-4 text-white" style="width: 18rem; background-color: rgb(14, 14, 48);">
-                <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">SPORTS HIGHLIGHT</p>
-                </div>
-            </div>
-            <div class="card col-3 text-white" style="width: 18rem; background-color: rgb(14, 14, 48);">
-                <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">SPORTS HIGHLIGHT</p>
+    
+                <!-- Row for Sport Buttons (side-by-side, inline, centered) -->
+                <div class="row justify-content-center mt-3" id="sports-list" style="display: flex; justify-content: center; gap: 10px;"></div>
+    
+                <!-- Container for Cards (hidden initially) -->
+                <div id="cards-container" class="row justify-content-center mt-5" style="display: none;">
+                    <!-- Cards will be inserted here dynamically -->
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
+    
 
 
 
@@ -234,6 +247,7 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="sports.js"></script>
 </body>
 
 </html>

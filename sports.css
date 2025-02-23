@@ -96,36 +96,26 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(193, 178, 14);
 }
-
-li {
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    text-align: center;
-    font-size: 1.5rem;
+.button{
+    width: 270px;
+    height: 150px;
+    background-color: #3361AC;
+    border: 3px solid #E8C766;
+    border-radius: 10px;
 }
-.dropdown {
-    background-color: rgb(255, 246, 82);
-    width: 825px;
-    height: 300px;
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 2.5rem;
-    margin-top: 100px;
+.button:hover{
+    background-color: rgb(11, 11, 101);
+    border: 3px solid rgb(112, 112, 34);
 }
-.dropdown:hover {
-    background-color: rgb(153, 147, 32);
-    color: white;
+.butn{
+    width: 250px;
+    height: 100px;
+    background-color: #E8C766;
+    border: 3px solid #3361AC;
+    font-size: 30px;
+    border-radius: 10px;
 }
-.dropdown:focus {
-    background-color:rgb(153, 147, 32);
-    color: white;
-}
-.dropdown-menu{
-    width: 550px;
-    text-align: center;
-}
-.item {
-    cursor: not-allowed
+.butn:hover{
+    background-color:rgb(112, 112, 34);
+    border: 3px solid rgb(11, 11, 101);
 }

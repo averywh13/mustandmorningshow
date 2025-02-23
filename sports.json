@@ -1,0 +1,531 @@
+{
+    "seasons": {
+      "fall": {
+        "sports": [
+          {
+            "name": "Girls Cross Country",
+            "cards": [
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is a girls cross country  description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is another girls cross country card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "Yet another girls cross country card description."
+              }
+            ]
+          },
+          {
+            "name": "Boys Cross Country",
+            "cards": [
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is a boys cross country card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is another boys cross country card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "Yet another boys cross country card description."
+              }
+            ]
+          },
+          {
+            "name": "Girls Volleyball",
+            "cards": [
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is a girls volleyball card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is another girls volleyball card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "Yet another girls volleyball card description."
+              }
+            ]
+          },
+          {
+            "name": "Football",
+            "cards": [
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is a football card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is another football card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "Yet another football card description."
+              }
+            ]
+          },
+          {
+            "name": "Girls Tennis",
+            "cards": [
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is a girls tennis card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is another girls tennis card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "Yet another girls tennis card description."
+              }
+            ]
+          },
+          {
+            "name": "Girls Soccer",
+            "cards": [
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is a girls soccer card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is another girls soccer card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "Yet another girls soccer card description."
+              }
+            ]
+          },
+          {
+            "name": "Boys Soccer",
+            "cards": [
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is a boys soccer card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is another boys soccer card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "Yet another boys soccer card description."
+              }
+            ]
+          },
+          {
+            "name": "Gymnastics",
+            "cards": [
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is a gymnastics card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is another gymnastics card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "Yet another gymnastics card description."
+              }
+            ]
+          }
+        ]
+      },
+
+
+
+
+
+
+
+      "winter": {
+        "sports": [
+          {
+            "name": "Boys Basketball",
+            "cards": [
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is a boys basketball card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is another boys basketball card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "Yet another boys basketball card description."
+              }
+            ]
+          },
+          {
+            "name": "Girls Basketball",
+            "cards": [
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is a girls basketball card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is another girls basketball card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "Yet another girls basketball card description."
+              }
+            ]
+          },
+          {
+            "name": "Competition Cheer",
+            "cards": [
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is an competition cheer card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is another competition cheer card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "Yet another competition cheer card description."
+              }
+            ]
+          },
+          {
+            "name": "Ice Hockey",
+            "cards": [
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is a ice hockey description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is another ice hockey card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "Yet another ice hockey card description."
+              }
+            ]
+          },
+          {
+            "name": "Swimming",
+            "cards": [
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is a swimming card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is another swimming card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "Yet another swimming card description."
+              }
+            ]
+          },
+          {
+            "name": "Winter track",
+            "cards": [
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is a winter track card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is another winter track card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "Yet another winter track card description."
+              }
+            ]
+          },
+          {
+            "name": "Wrestling",
+            "cards": [
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is a wrestling card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is another wrestling card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "Yet another wrestling card description."
+              }
+            ]
+          }
+        ]
+      },
+
+
+
+
+
+
+
+      "spring": {
+        "sports": [
+          {
+            "name": "Baseball",
+            "cards": [
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is a baseball card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is another baseball card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "Yet another baseball card description."
+              }
+            ]
+          },
+          {
+            "name": "Boys Golf",
+            "cards": [
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is a boys golf card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is another boys golf card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "Yet another boys golf card description."
+              }
+            ]
+          },
+          {
+            "name": "Girls Golf",
+            "cards": [
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is a girls golf card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is another girls golf card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "Yet another girls golf card description."
+              }
+            ]
+          },
+          {
+            "name": "Boys Lacrosse",
+            "cards": [
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is a boys lacrosse card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is another boys lacrosse card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "Yet another boys lacrosse card description."
+              }
+            ]
+          },
+          {
+            "name": "Girls Lacrosse",
+            "cards": [
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is a girls lacrosse card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is another girls lacrosse card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Tennis Card 3",
+                "text": "Yet another girls lacrosse card description."
+              }
+            ]
+          },
+          {
+            "name": "Softball",
+            "cards": [
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is a softball card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is another softball card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "Yet another softball card description."
+              }
+            ]
+          },
+          {
+            "name": "Boys Tennis",
+            "cards": [
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is a boys tennis card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is another boys tennis card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "Yet another boys tennis card description."
+              }
+            ]
+          },
+          {
+            "name": "Boys Track & Field",
+            "cards": [
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is a boys track/field card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is another boys track/field card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "Yet another boys track/field card description."
+              }
+            ]
+          },
+          {
+            "name": "Girls Track & Field",
+            "cards": [
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is a girls track/field card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is another girls track/field card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "Yet another girls track/field card description."
+              }
+            ]
+          },
+          {
+            "name": "Boys Volleyball",
+            "cards": [
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is a boys volleyball card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "This is another boys volleyball card description."
+              },
+              {
+                "image": "https://picsum.photos/200/300",
+                "title": "Sports Announcement",
+                "text": "Yet another boys volleyball card description."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+  
