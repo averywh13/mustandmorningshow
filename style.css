@@ -87,3 +87,32 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(193, 178, 14);
 }
+
+.card{
+    width: 850px;
+    height: 650px;
+    background-color: rgb(62, 62, 175);
+    color: white;
+    border: 3px solid rgb(226, 205, 111);
+    margin-bottom: 100px;
+}
+
+.carousel-control-prev-icon{
+    background-image: url('imgs/arrowleft2.png');
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+}
+.carousel-control-next-icon{
+    background-image: url('imgs/arrowright2.png');
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+}
+.carousel-control-next-icon:active{
+    opacity: 1;
+}
+.caroimage{
+width: 850px;
+height: 500px;
+}

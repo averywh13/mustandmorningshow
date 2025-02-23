@@ -1,44 +1,32 @@
-{
-    "cards": [
-      {
-        "title": "first",
-        "text": "first",
-        "buttonText": "first",
-        "images": ["https://via.placeholder.com/150"]
-      }
-    ],
-    "cards2": [
-      {
-        "title": "first",
-        "text": "first",
-        "buttonText": "first",
-        "images": ["https://via.placeholder.com/150"]
-      }
-    ],
-    "cards3": [
-      {
-        "title": "first",
-        "text": "first",
-        "buttonText": "first",
-        "images": ["https://via.placeholder.com/150"]
-      }
-    ]
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
+[
+  {
+      "image": "https://picsum.photos/200/300",
+      "title": "Announcement 1",
+      "text": "This is text for Image 1"
+  },
+  {
+      "image": "https://picsum.photos/200/300",
+      "title": "Announcment 2",
+      "text": "This is text for Image 2"
+  },
+  {
+      "image": "https://picsum.photos/200/300",
+      "title": "Announcement 3",
+      "text": "This is text for Image 3"
+  },
+  {
+      "image": "https://picsum.photos/200/300",
+      "title": "Announcment 4",
+      "text": "This is text for Image 4"
+  },
+  {
+      "image": "https://picsum.photos/200/300",
+      "title": "Announcment 5",
+      "text": "This is text for Image 5"
+  },
+  {
+    "image": "https://picsum.photos/200/300",
+    "title": "Announcment 6",
+    "text": "This is text for Image 6"
+}
+]

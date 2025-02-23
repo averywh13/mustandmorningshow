@@ -1,53 +1,32 @@
-document.addEventListener('DOMContentLoaded', function() {
-  // Define arrays for images (keeping this in JavaScript)
-  const images = [
-    'https://via.placeholder.com/150',
-    'https://via.placeholder.com/150/ff0000',
-    'https://via.placeholder.com/150/00ff00'
-  ];
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("index.json")
+      .then(response => response.json())
+      .then(data => {
+          const carouselInner = document.querySelector(".carousel-inner");
+          const cardTitle = document.getElementById("cardTitle");
+          const cardText = document.getElementById("cardText");
 
-  // Load JSON file to change card text dynamically
-  fetch('index.json')
-    .then(response => response.json())
-    .then(data => {
-      const cards = data.cards;
-      const cards2 = data.cards2;
-      const cards3 = data.cards3;
+          carouselInner.innerHTML = ""; // Clear existing content
 
-      // Set card text from JSON
-      document.getElementById('cardTitle1').innerText = cards[0].title;
-      document.getElementById('cardText1').innerText = cards[0].text;
-      document.getElementById('cardButton1').innerText = cards[0].buttonText;
+          data.forEach((item, index) => {
+              const isActive = index === 0 ? "active" : "";
+              carouselInner.innerHTML += `
+                  <div class="carousel-item ${isActive}" data-title="${item.title}" data-text="${item.text}">
+                      <img src="${item.image}" class="d-block caroimage" alt="Image ${index + 1}">
+                  </div>
+              `;
+          });
 
-      document.getElementById('cardTitle2').innerText = cards2[1].title;
-      document.getElementById('cardText2').innerText = cards2[1].text;
-      document.getElementById('cardButton2').innerText = cards2[1].buttonText;
+          // Set initial title and text
+          cardTitle.textContent = data[0].title;
+          cardText.textContent = data[0].text;
 
-      document.getElementById('cardTitle3').innerText = cards3[2].title;
-      document.getElementById('cardText3').innerText = cards3[2].text;
-      document.getElementById('cardButton3').innerText = cards3[2].buttonText;
-
-      // Event listeners for next and prev buttons (for all three carousels)
-      const carousels = ['carouselExample1', 'carouselExample2', 'carouselExample3'];
-      carousels.forEach((carousel, index) => {
-        const nextButton = document.querySelector(`#${carousel} .carousel-control-next`);
-        const prevButton = document.querySelector(`#${carousel} .carousel-control-prev`);
-        
-        let currentIndex = 0;
-        nextButton.addEventListener('click', function() {
-          currentIndex = (currentIndex + 1) % images.length;
-          document.getElementById(`cardTitle${index + 1}`).innerText = cards[currentIndex].title;
-          document.getElementById(`cardText${index + 1}`).innerText = cards[currentIndex].text;
-          document.getElementById(`cardButton${index + 1}`).innerText = cards[currentIndex].buttonText;
-        });
-
-        prevButton.addEventListener('click', function() {
-          currentIndex = (currentIndex - 1 + images.length) % images.length;
-          document.getElementById(`cardTitle${index + 1}`).innerText = cards[currentIndex].title;
-          document.getElementById(`cardText${index + 1}`).innerText = cards[currentIndex].text;
-          document.getElementById(`cardButton${index + 1}`).innerText = cards[currentIndex].buttonText;
-        });
-      });
-    })
-    .catch(error => console.error('Error loading JSON:', error));
+          // Update title and text on carousel slide change
+          document.getElementById("carouselExample").addEventListener("slid.bs.carousel", function () {
+              const activeItem = document.querySelector(".carousel-item.active");
+              cardTitle.textContent = activeItem.getAttribute("data-title");
+              cardText.textContent = activeItem.getAttribute("data-text");
+          });
+      })
+      .catch(error => console.error("Error loading JSON:", error));
 });
