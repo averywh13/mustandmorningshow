@@ -61,10 +61,7 @@ body {
   max-width: 100%;
   margin-left: 0;
 }
-.rightpic{
-  width: 950px;
-  height: 550px;
-}
+
 
 ::-webkit-scrollbar {
     width: 20px;
@@ -84,7 +81,7 @@ body {
     background: rgb(193, 178, 14);
 }
 
-* {
+/* * {
     margin: 0;
     padding: 0;
   }
@@ -177,4 +174,54 @@ body {
     .card {
     width: 100%;
     }
-  }
+  } */
+
+
+
+
+
+
+  .containercard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .info {
+    transform: translateY(0);
+}
