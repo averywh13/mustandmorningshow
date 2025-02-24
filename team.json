@@ -1,28 +1,172 @@
-[
-    {
-      "name": "John Doe",
-      "role": "Lead Actor",
-      "image": "headshots/sample1.jpg"
-    },
-    {
-      "name": "Jane Smith",
-      "role": "Supporting Role",
-      "image": "headshots/sample2.jpg"
-    },
-    {
-      "name": "Alex Johnson",
-      "role": "Director",
-      "image": "headshots/sample3.jpg"
-    },
-    {
-      "name": "Emily White",
-      "role": "Producer",
-      "image": "headshots/sample4.jpg"
-    },
-    {
-      "name": "Michael Brown",
-      "role": "Stage Manager",
-      "image": "headshots/sample5.jpg"
-    }
-  ]
+{
+    "cast": [
+      {
+        "name": "Mr. Werntz",
+        "role": "CAST & DIRECTOR",
+        "image": "headshots/mrwerntz.jpg"
+      },
+      {
+        "name": "Mason Altschuler",
+        "role": "CAST",
+        "image": "headshots/masonaltschuler.png"
+      },
+      {
+        "name": "Eliana Berman",
+        "role": "CAST",
+        "image": "headshots/eliberman.png"
+      },
+      {
+        "name": "Lily Bencivenga",
+        "role": "CAST",
+        "image": "headshots/lilybencivega.png"
+      },
+      {
+        "name": "Daniel Benowitz",
+        "role": "CAST & PRODUCER",
+        "image": "headshots/danbenowitz.png"
+      },
+      {
+        "name": "Leila Brunisholtz",
+        "role": "CAST",
+        "image": "headshots/leilabrunisholtz.png"
+      },
+      {
+        "name": "Jacob Bremen",
+        "role": "CAST",
+        "image": "headshots/jacobbremman.png"
+      },
+      {
+        "name": "Gabriella DeGrazio",
+        "role": "CAST",
+        "image": "headshots/gabbydegrazio.png"
+      },
+      {
+        "name": "Gabriella Franzini",
+        "role": "CAST",
+        "image": "headshots/gabriellafranzini.png"
+      },
+      {
+        "name": "Mirolla Fahmi",
+        "role": "CAST",
+        "image": "headshots/mirollafahmi.png"
+      },
+      {
+        "name": "Viacheslav Kostenko",
+        "role": "CAST",
+        "image": "headshots/slavkostenko.png"
+      },
+      {
+        "name": "Zachary Levin",
+        "role": "CAST",
+        "image": "headshots/zachlevin.jpg"
+      },
+      {
+        "name": "Juliana Marrone",
+        "role": "CAST",
+        "image": "headshots/julianamarrone.png"
+      },
+      {
+        "name": "Marina Manucci",
+        "role": "CAST",
+        "image": "headshots/marinamanucci.png"
+      },
+      {
+        "name": "Lexa Pine",
+        "role": "CAST",
+        "image": "headshots/lexapine.png"
+      },
+      {
+        "name": "Anna Peikrishvili",
+        "role": "CAST",
+        "image": "headshots/annapeikrishvili.png"
+      },
+      {
+        "name": "Belissy Rodrigues",
+        "role": "CAST & PRODUCER",
+        "image": "headshots/belissyrodrigues.jpg"
+      },
+      {
+        "name": "Christopher Sclafani",
+        "role": "CAST",
+        "image": "headshots/christsclafani.png"
+      },
+      {
+        "name": "Ziva McQuade",
+        "role": "CAST",
+        "image": "headshots/zivamcquade.png"
+      }
+    ],
+    "production": [
+      {
+        "name": "Mr. Werntz",
+        "role": "CAST & PRODUCER",
+        "image": "headshots/mrwerntz.jpg"
+      },
+      {
+        "name": "Gabby Ajiashvili",
+        "role": "PRODUCER",
+        "image": "headshots/gabbyajiashvili.png"
+      },
+      {
+        "name": "Daniel Benowitz",
+        "role": "CAST & PRODUCER",
+        "image": "headshots/danbenowitz.png"
+      },
+      {
+        "name": "Akash Chand",
+        "role": "PRODUCER",
+        "image": "headshots/akashchand.png"
+      },
+      {
+        "name": "Aaralyn Cortez",
+        "role": "PRODUCER",
+        "image": "headshots/aaralyncortez.png"
+      },
+      {
+        "name": "Anna Peikrishvili",
+        "role": "PRODUCER",
+        "image": "headshots/annapeikrishvili.png"
+      },
+      {
+        "name": "Nathaniel Coto",
+        "role": "PRODUCER",
+        "image": "headshots/natecoto.png"
+      },
+      {
+        "name": "Daniela DiMartino",
+        "role": "PRODUCER",
+        "image": "headshots/danieladimartino.jpg"
+      },
+      {
+        "name": "Joe Lucchese",
+        "role": "PRODUCER",
+        "image": "headshots/joelucchese.png"
+      },
+      {
+        "name": "Kamerin Nash",
+        "role": "PRODUCER",
+        "image": "headshots/kamnash.png"
+      },
+      {
+        "name": "Grace Otlowski",
+        "role": "PRODUCER",
+        "image": "headshots/gracieotlowski.jpg"
+      },
+      {
+        "name": "Belissy Rodrigues",
+        "role": "PRODUCER",
+        "image": "headshots/belissyrodrigues.jpg"
+      },
+      {
+        "name": "Tatum Surrett",
+        "role": "PRODUCER",
+        "image": "headshots/tatumsurrett.png"
+      },
+      {
+        "name": "Emma Yee",
+        "role": "PRODUCER",
+        "image": "headshots/emmayee.jpg"
+      }
+    ]
+  }
   

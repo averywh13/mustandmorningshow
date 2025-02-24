@@ -2,10 +2,13 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("team.json")
         .then(response => response.json())
         .then(data => {
-            const container = document.querySelector(".containercard");
-            container.innerHTML = ""; // Clear existing content
+            const castContainer = document.querySelector(".cast-container");
+            const productionContainer = document.querySelector(".production-container");
 
-            data.forEach(person => {
+            castContainer.innerHTML = "";
+            productionContainer.innerHTML = "";
+
+            function createCard(person) {
                 const card = document.createElement("div");
                 card.classList.add("card");
 
@@ -16,9 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
                         <p>${person.role}</p>
                     </div>
                 `;
+                return card;
+            }
 
-                container.appendChild(card);
-            });
+            data.cast.forEach(person => castContainer.appendChild(createCard(person)));
+            data.production.forEach(person => productionContainer.appendChild(createCard(person)));
         })
         .catch(error => console.error("Error loading JSON:", error));
 });
