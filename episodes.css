@@ -102,5 +102,28 @@ body {
 
 #seasonTitle{
     color:white;
-    letter-spacing: 3px;
+    letter-spacing: 10px;
+    font-size: 65px;
 }
+.center-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  /* Ensuring images fit well */
+  .episode-img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+    border: 4px solid #E8C766;
+  }
+  .episode-img:hover {
+    transform: scale(1.05);
+  }
+  .modal-dialog{
+    width: 1000px;
+  }

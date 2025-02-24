@@ -14,33 +14,46 @@ fetch('episodes.json')
           // Update the season title
           seasonTitle.textContent = season.title;
 
-          season.episodes.forEach((episode) => {
+          let row;
+          season.episodes.forEach((episode, index) => {
+            // Create a new row every 5 episodes
+            if (index % 5 === 0) {
+              row = document.createElement('div');
+              row.classList.add('row', 'justify-content-center', 'mb-3'); // Center row
+              grid.appendChild(row);
+            }
+
+            // Create column for each image
             const col = document.createElement('div');
-            col.classList.add('col-md-2', 'mb-4');
+            col.classList.add('col-md-2', 'text-center', 'mx-auto'); // Centers each column
+
+            // Create image element
             const img = document.createElement('img');
             img.src = episode.image;
-            img.classList.add('img-fluid');
+            img.classList.add('episode-img');
             img.alt = episode.name;
+
+            // Create caption
             const caption = document.createElement('p');
             caption.textContent = episode.name;
+
+            // Append elements
             col.appendChild(img);
             col.appendChild(caption);
+            row.appendChild(col);
+
             // Add event listener to open modal when an episode is clicked
             col.addEventListener('click', () => showEpisodeModal(episode));
-            grid.appendChild(col);
           });
 
-          grid.style.display = 'flex';
-          grid.style.flexWrap = 'wrap';
+          grid.style.display = 'block';
         }
 
         // Function to show the episode modal with YouTube video
         function showEpisodeModal(episode) {
-          const videoContainer = document.getElementById('videoContainer');
           const videoIframe = document.getElementById('episodeVideo');
-          // Set the video iframe src to the video URL
           videoIframe.src = episode.videoUrl;
-          
+
           // Show the modal
           const modal = new bootstrap.Modal(document.getElementById('episodeModal'));
           modal.show();
