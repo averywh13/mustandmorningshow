@@ -1,0 +1,115 @@
+{
+    "season1": {
+      "title": "Season 1",
+      "name": "Season 1",
+      "episodes": [
+        {
+          "name": "Episode 1",
+          "image": "thumbnails/mustangmornings1e1.png",
+          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        },
+        {
+          "name": "Episode 2",
+          "image": "thumbnails/mustangmornings1e2.png",
+          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        },
+        {
+          "name": "Episode 3",
+          "image": "thumbnails/mustangmornings1e3.png",
+          "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        },
+        {
+            "name": "Episode 4",
+            "image": "thumbnails/mustangmornings1e4.png",
+            "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+          },
+          {
+            "name": "Episode 5",
+            "image": "thumbnails/mustangmornings1e5.png",
+            "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+          },
+          {
+            "name": "Episode 6",
+            "image": "thumbnails/mustangmornings1e6.png",
+            "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+          },
+          {
+            "name": "Episode 7",
+            "image": "thumbnails/mustangmornings1e7.png",
+            "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+          },
+          {
+            "name": "Episode 8",
+            "image": "thumbnails/mustangmornings1e8.png",
+            "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+          },
+          {
+            "name": "Episode 9",
+            "image": "thumbnails/mustangmornings1e9.png",
+            "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+          },
+          {
+            "name": "Episode 10",
+            "image": "thumbnails/mustangmornings1e10.png",
+            "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+          }
+      ]
+    },
+    "season2": {
+      "title": "Season 2",
+      "name": "Season 2",
+      "episodes": [
+        {
+            "name": "Episode 1",
+            "image": "thumbnails/mustangmornings2e1.png",
+            "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+          },
+          {
+            "name": "Episode 2",
+            "image": "thumbnails/mustangmornings2e2.png",
+            "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+          },
+          {
+            "name": "Episode 3",
+            "image": "thumbnails/mustangmornings2e3.png",
+            "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+          },
+          {
+              "name": "Episode 4",
+              "image": "thumbnails/mustangmornings2e4.png",
+              "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+            },
+            {
+              "name": "Episode 5",
+              "image": "thumbnails/mustangmornings2e5.png",
+              "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+            },
+            {
+              "name": "Episode 6",
+              "image": "thumbnails/mustangmornings2e6.png",
+              "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+            },
+            {
+              "name": "Episode 7",
+              "image": "thumbnails/mustangmornings2e7.png",
+              "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+            },
+            {
+              "name": "Episode 8",
+              "image": "thumbnails/mustangmornings2e8.png",
+              "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+            },
+            {
+              "name": "Episode 9",
+              "image": "thumbnails/mustangmornings2e9.png",
+              "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+            },
+            {
+              "name": "Episode 10",
+              "image": "thumbnails/mustangmornings2e10.png",
+              "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+            }
+      ]
+    }
+  }
+  

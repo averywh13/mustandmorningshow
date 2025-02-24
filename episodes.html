@@ -8,6 +8,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="episodes.css">
+
+    <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,165 +56,59 @@
         </div>
     </nav>
     <!-- navbar -->
-
-
-
-
-
-
-
     <div class="container container1">
-        <div class="row">
-            <div class="col-md-7 mt-5">
-                <img src="imgs/mustanglogov (1)-1.png" class="leftpic">
-            </div>
-            <!-- insert the most recent episode -->
+      <div class="row">
+        <div class="col-md-7 mt-5">
+          <img src="imgs/mustanglogov (1)-1.png" class="leftpic">
         </div>
-    </div>
-
-    <div class="dropdown">
-      <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Season
-      </button>
-      <ul class="dropdown-menu dropdown-menu-dark">
-        <li><a class="dropdown-item active" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
-    </div>
-    <div class="set1">
-        <h2 class="title">SEASON 1</h2>
-    <!-- first episode 23/24 -->
-    <a href="https://www.youtube.com/watch?v=0EBrGt4rysA&list=PL0ZHTNPQe7WxE6ARYbJ0NjhNkxB1ff64I">
-        <img class="episode mb-3" src="thumbnails/mustangmornings1e1.png" alt="Forest">
-      </a>
-    <!-- first episode 23/24 -->
-    
-    <!-- second episode 23/24 -->
-    <a href="https://www.youtube.com/watch?v=cFImm9625sQ&list=PL0ZHTNPQe7WxE6ARYbJ0NjhNkxB1ff64I&index=2">
-        <img class="episode mb-3 mx-3" src="thumbnails/mustangmornings1e2.png" alt="Forest">
-      </a>
-    <!-- second episode 23/24 -->
-    
-    <!-- third episode 23/24 -->
-    <a href="https://www.youtube.com/watch?v=Kdp_pjX-Uws&list=PL0ZHTNPQe7WxE6ARYbJ0NjhNkxB1ff64I&index=3">
-        <img class="episode mb-3" src="thumbnails/mustangmornings1e3.png" alt="Forest">
-      </a>
-    <!-- third episode 23/24 -->
-    
-    <!-- fourth episode 23/24 -->
-    <a href="https://www.youtube.com/watch?v=d871d3m633E&list=PL0ZHTNPQe7WxE6ARYbJ0NjhNkxB1ff64I&index=4">
-        <img class="episode mb-3 mx-3" src="thumbnails/mustangmornings1e4.png" alt="Forest">
-      </a>
-     <!-- fourth episode 23/24 -->
-    
-    <!-- fifth episode 23/24 -->
-    <a href="https://www.youtube.com/watch?v=Zj0mY-5ea08&list=PL0ZHTNPQe7WxE6ARYbJ0NjhNkxB1ff64I&index=5">
-        <img class="episode mb-3" src="thumbnails/mustangmornings1e5.png" alt="Forest">
-      </a>
-    <!-- fifth episode 23/24 -->
-    
-    <!-- sixth episode 23/24 -->
-    <a href="https://www.youtube.com/watch?v=khx0-nvSe8A&list=PL0ZHTNPQe7WxE6ARYbJ0NjhNkxB1ff64I&index=6">
-        <img class="episode mb-3 mx-3" src="thumbnails/mustangmornings1e6.png" alt="Forest">
-      </a>
-    <!-- sixth episode 23/24 -->
-    
-    <!-- seventh episode 23/24 -->
-    <a href="https://www.youtube.com/watch?v=qLBEPRSHIJY&list=PL0ZHTNPQe7WxE6ARYbJ0NjhNkxB1ff64I&index=7">
-        <img class="episode mb-3" src="thumbnails/mustangmornings1e7.png" alt="Forest">
-      </a>
-    <!-- seventh episode 23/24 -->
-    
-    <!-- eighth episode 23/24 -->
-    <a href="https://www.youtube.com/watch?v=DGyF8vda2W4&list=PL0ZHTNPQe7WxE6ARYbJ0NjhNkxB1ff64I&index=8">
-        <img class="episode mb-3 mx-3" src="thumbnails/mustangmornings1e8.png" alt="Forest">
-      </a>
-    <!-- eighth episode 23/24 -->
-    
-    <!-- ninth episode 23/24 -->
-    <a href="https://www.youtube.com/watch?v=1u9lx9EnkKc&list=PL0ZHTNPQe7WxE6ARYbJ0NjhNkxB1ff64I&index=9">
-        <img class="episode mb-3" src="thumbnails/mustangmornings1e9.png" alt="Forest">
-      </a>
-    <!-- ninth episode 23/24 -->
-    
-    <!-- tenth episode 23/24 -->
-    <a href="https://www.youtube.com/watch?v=4FQ1ppetzb0&list=PL0ZHTNPQe7WxE6ARYbJ0NjhNkxB1ff64I&index=10">
-        <img class="episode mb-3 mx-3" src="thumbnails/mustangmornings1e10.png" alt="Forest">
-      </a>
-    <!-- tenth episode 23/24 -->
-    </div>
-
-
-
-<!-- dropdown(or buttons?) for each season/have the section change based on the season selected/similar to birthday page -->
+        <div class="col-md-5 mt-5">
+            <iframe width="960" height="615" src="https://www.youtube.com/embed/lR0dsD5OLGg?si=L2MEW8dE0CyZzAwY&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        </div>
+        </div>
 
 
 
 
 
-    <div class="set2">
-        <h2 class="title">SEASON 2</h2>
-    <!-- first episode 23/24 -->
-    <a href="https://www.youtube.com/watch?v=dRjjs11yfZ4&list=PL0ZHTNPQe7Wz5QpVkE-GMemOekIIr6f5E&index=5">
-        <img class="episode mb-3" src="thumbnails/mustangmornings2e1.png" alt="Forest">
-      </a>
-    <!-- first episode 23/24 -->
-    
-    <!-- second episode 23/24 -->
-    <a href="https://www.youtube.com/watch?v=06bV46l-nTw&list=PL0ZHTNPQe7Wz5QpVkE-GMemOekIIr6f5E&index=4">
-        <img class="episode mb-3 mx-3" src="thumbnails/mustangmornings2e2.png" alt="Forest">
-      </a>
-    <!-- second episode 23/24 -->
-    
-    <!-- third episode 23/24 -->
-    <a href="https://www.youtube.com/watch?v=SCZ3Z8nP4d8&list=PL0ZHTNPQe7Wz5QpVkE-GMemOekIIr6f5E&index=3">
-        <img class="episode mb-3" src="thumbnails/mustangmornings2e3.png" alt="Forest">
-      </a>
-    <!-- third episode 23/24 -->
-    
-    <!-- fourth episode 23/24 -->
-    <a href="https://www.youtube.com/watch?v=iGMzgWW0tZw&list=PL0ZHTNPQe7Wz5QpVkE-GMemOekIIr6f5E&index=2">
-        <img class="episode mb-3 mx-3" src="thumbnails/mustangmornings2e4.png" alt="Forest">
-      </a>
-     <!-- fourth episode 23/24 -->
-    
-    <!-- fifth episode 23/24 -->
-    <a href="https://www.youtube.com/watch?v=lR0dsD5OLGg&list=PL0ZHTNPQe7Wz5QpVkE-GMemOekIIr6f5E&index=1">
-        <img class="episode mb-3" src="thumbnails/mustangmornings2e5.png" alt="Forest">
-      </a>
-    <!-- fifth episode 23/24 -->
-    
-    <!-- sixth episode 23/24 -->
-    <a href="...">
-        <img class="episode mb-3 mx-3" src="thumbnails/..." alt="episode6">
-      </a>
-    <!-- sixth episode 23/24 -->
-    
-    <!-- seventh episode 23/24 -->
-    <a href="...">
-        <img class="episode mb-3" src="thumbnails/..." alt="episode7">
-      </a>
-    <!-- seventh episode 23/24 -->
-    
-    <!-- eighth episode 23/24 -->
-    <a href="...">
-        <img class="episode mb-3 mx-3" src="thumbnails/..." alt="episode8">
-      </a>
-    <!-- eighth episode 23/24 -->
-    
-    <!-- ninth episode 23/24 -->
-    <a href="...">
-        <img class="episode mb-3" src="thumbnails/..." alt="episode9">
-      </a>
-    <!-- ninth episode 23/24 -->
-    
-    <!-- tenth episode 23/24 -->
-    <a href="...">
-        <img class="episode mb-3 mx-3" src="thumbnails/..." alt="episode10">
-      </a>
-    <!-- tenth episode 23/24 -->
-    </div>
+
+        <div class="container7 text-center">
+          <!-- Title for the season -->
+          <h2 id="seasonTitle" class="mb-4 text-uppercase">Season 1</h2>
+      
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              Seasons
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#" id="season1">Season 1</a></li>
+              <li><a class="dropdown-item" href="#" id="season2">Season 2</a></li>
+            </ul>
+          </div>
+      
+          <div id="imageGrid" class="row mt-4 justify-content-center" style="display: none;">
+            <!-- Images will be inserted here dynamically -->
+          </div>
+        </div>
+      
+        <!-- Modal Structure -->
+        <div class="modal fade" id="episodeModal" tabindex="-1" aria-labelledby="episodeModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="episodeModalLabel">Episode Video</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <!-- YouTube Video will be inserted here dynamically -->
+                <div id="videoContainer" class="embed-responsive embed-responsive-16by9">
+                  <iframe id="episodeVideo" class="embed-responsive-item" src="" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
 
 
 
@@ -238,6 +138,7 @@
     <script>
         !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
     </script>
+    <script src="episodes.js"></script>
 </body>
 
 </html>
