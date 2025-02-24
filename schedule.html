@@ -64,7 +64,29 @@
             </div>
         </div>
 
-        <!-- get rid of calendar/have layout similar to schedule project/displays letter day, schedule using periods, and highlight of which block is current -->
+        <div class="container9 mb-4">
+            <div class="calendar text-center">
+                <h3 id="monthYear"></h3>
+                <div class="d-flex justify-content-between align-items-center">
+                    <button class="btn butn text-white" id="prev">Previous</button>
+                    <h3 id="monthYear" class="flex-grow-1 text-center"></h3>
+                    <button class="btn butn text-white" id="next">Next</button>
+                </div>
+                
+                <div class="mt-3">
+                    <div class="d-flex font-weight-bold">
+                        <div class="day">Sun</div>
+                        <div class="day">Mon</div>
+                        <div class="day">Tue</div>
+                        <div class="day">Wed</div>
+                        <div class="day">Thu</div>
+                        <div class="day">Fri</div>
+                        <div class="day">Sat</div>
+                    </div>
+                    <div id="calendar-body"></div>
+                </div>
+            </div>
+        </div>
 
 
 
@@ -98,6 +120,7 @@
         <script>
             !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
         </script>
+        <script src="schedule.js"></script>
 </body>
 
 </html>
