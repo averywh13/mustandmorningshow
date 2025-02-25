@@ -64,32 +64,38 @@
             </div>
         </div>
 
-        <div class="container9 mb-4">
-            <div class="calendar text-center">
-                <h3 id="monthYear"></h3>
-                <div class="d-flex justify-content-between align-items-center">
-                    <button class="btn butn text-white" id="prev">Previous</button>
-                    <h3 id="monthYear" class="flex-grow-1 text-center"></h3>
-                    <button class="btn butn text-white" id="next">Next</button>
-                </div>
-                
-                <div class="mt-3">
-                    <div class="d-flex font-weight-bold">
-                        <div class="day">Sun</div>
-                        <div class="day">Mon</div>
-                        <div class="day">Tue</div>
-                        <div class="day">Wed</div>
-                        <div class="day">Thu</div>
-                        <div class="day">Fri</div>
-                        <div class="day">Sat</div>
-                    </div>
-                    <div id="calendar-body"></div>
-                </div>
+
+
+
+
+        
+        <div class="container calendar-container text-center">
+            <h1 class="mb-4">Dynamic Bootstrap Calendar</h1>
+            <div class="d-flex justify-content-between mb-3">
+                <button class="btn btn-primary" onclick="prevMonth()">Previous</button>
+                <h2 id="monthYear"></h2>
+                <button class="btn btn-primary" onclick="nextMonth()">Next</button>
+            </div>
+            
+            <div class="calendar" id="calendar">
+                <!-- Calendar will be generated here -->
+            </div>
+        
+            <div class="event-input">
+                <label for="eventDate">Select Date:</label>
+                <input type="date" id="eventDate" class="form-control w-auto">
+                <input type="text" id="eventText" class="form-control w-auto mt-2" placeholder="Event Description">
+                <button class="btn btn-success mt-2" onclick="addEvent()">Add Event</button>
             </div>
         </div>
+        
 
 
-
+        <div class="news-ticker">
+            <div class="ticker-content">
+              🚀 Breaking News: LALALALALALALALALALALALALA! | 📢 Stay tuned for more updates! | 🌍 Latest headlines from around
+              the world!
+            </div>
 
 
 
