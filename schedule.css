@@ -92,7 +92,9 @@ body {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
+    align-items: center;
 }
+
 .calendar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -111,16 +113,16 @@ body {
 }
 .day-header {
     font-weight: bold;
-    background-color: #007bff;
+    background-color: #0043c0;
     color: white;
     text-align: center;
     padding: 10px;
 }
 .today {
-    background-color: #ffc107;
+    background-color: #e0d429;
 }
 .event {
-    background-color: #28a745;
+    background-color: #ffd900;
     color: white;
     position: absolute;
     bottom: 10px;
@@ -139,8 +141,16 @@ body {
     right: 5px;
     width: 10px;
     height: 10px;
-    background-color: #28a745;
+    background-color: #ffd900;
     border-radius: 50%;
+}
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
 }
 
 
@@ -151,7 +161,7 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: #222;
+    background: #0011aa;
     color: white;
     padding: 10px 0;
     overflow: hidden;
