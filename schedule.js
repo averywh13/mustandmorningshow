@@ -130,3 +130,25 @@ function removeEvent(date, index) {
 
 // Initial setup
 generateCalendar(currentMonth, currentYear);
+
+        // Fetch the letter days from JSON file
+        fetch('schedule.json')
+            .then(response => response.json())
+            .then(data => {
+                const letterDays = data.days;
+
+                // Get the current date
+                const currentDate = new Date();
+
+                // Calculate the number of days since the start of the year
+                const startDate = new Date(currentDate.getFullYear(), 0, 1); // Jan 1st
+                const daysPassed = Math.floor((currentDate - startDate) / (1000 * 60 * 60 * 24));
+
+                // Determine the letter day (A-G cycle)
+                const dayOfWeek = daysPassed % 7;
+                const currentLetterDay = letterDays[dayOfWeek];
+
+                // Display the letter day
+                document.getElementById("letterDay").textContent = currentLetterDay;
+            })
+            .catch(error => console.error('Error loading letter days:', error));
