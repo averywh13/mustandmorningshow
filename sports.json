@@ -3,7 +3,7 @@
       "fall": {
         "sports": [
           {
-            "name": "Girls Cross Country",
+            "image": "imgs/crosscountry.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -23,7 +23,7 @@
             ]
           },
           {
-            "name": "Boys Cross Country",
+            "image": "imgs/crosscountry.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -43,7 +43,7 @@
             ]
           },
           {
-            "name": "Girls Volleyball",
+            "image": "imgs/volleyball.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -63,7 +63,7 @@
             ]
           },
           {
-            "name": "Football",
+            "image": "imgs/football.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -83,7 +83,7 @@
             ]
           },
           {
-            "name": "Girls Tennis",
+            "image": "imgs/tennis.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -103,7 +103,7 @@
             ]
           },
           {
-            "name": "Girls Soccer",
+            "image": "imgs/soccer.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -123,7 +123,7 @@
             ]
           },
           {
-            "name": "Boys Soccer",
+            "image": "imgs/soccer.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -143,7 +143,7 @@
             ]
           },
           {
-            "name": "Gymnastics",
+            "image": "imgs/gymnastics.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -174,7 +174,7 @@
       "winter": {
         "sports": [
           {
-            "name": "Boys Basketball",
+            "image": "imgs/basketball.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -194,7 +194,7 @@
             ]
           },
           {
-            "name": "Girls Basketball",
+          "image": "imgs/basketball.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -214,7 +214,7 @@
             ]
           },
           {
-            "name": "Competition Cheer",
+            "image": "imgs/cheerleader.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -234,7 +234,7 @@
             ]
           },
           {
-            "name": "Competition Dance",
+            "image": "imgs/dance.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -254,7 +254,7 @@
             ]
           },
           {
-            "name": "Ice Hockey",
+            "image": "imgs/icehockey.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -274,7 +274,7 @@
             ]
           },
           {
-            "name": "Swimming",
+            "image": "imgs/swimming.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -294,7 +294,7 @@
             ]
           },
           {
-            "name": "Winter track",
+            "image": "imgs/crosscountry.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -314,7 +314,7 @@
             ]
           },
           {
-            "name": "Wrestling",
+            "image": "imgs/wrestling.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -345,7 +345,7 @@
       "spring": {
         "sports": [
           {
-            "name": "Baseball",
+            "image": "imgs/baseball.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -365,7 +365,7 @@
             ]
           },
           {
-            "name": "Boys Golf",
+            "image": "imgs/golf.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -385,7 +385,7 @@
             ]
           },
           {
-            "name": "Girls Golf",
+            "image": "imgs/golf.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -405,7 +405,7 @@
             ]
           },
           {
-            "name": "Boys Lacrosse",
+            "image": "imgs/lacrosse.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -425,7 +425,7 @@
             ]
           },
           {
-            "name": "Girls Lacrosse",
+            "image": "imgs/lacrosse.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -439,13 +439,13 @@
               },
               {
                 "image": "https://picsum.photos/200/300",
-                "title": "Tennis Card 3",
+                "title": "Sports Announcement",
                 "text": "Yet another girls lacrosse card description."
               }
             ]
           },
           {
-            "name": "Softball",
+            "image": "imgs/baseball.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -465,7 +465,7 @@
             ]
           },
           {
-            "name": "Boys Tennis",
+            "image": "imgs/tennis.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -485,7 +485,7 @@
             ]
           },
           {
-            "name": "Boys Track & Field",
+            "image": "imgs/crosscountry.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -505,7 +505,7 @@
             ]
           },
           {
-            "name": "Girls Track & Field",
+            "image": "imgs/crosscountry.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -525,7 +525,7 @@
             ]
           },
           {
-            "name": "Boys Volleyball",
+            "image": "imgs/volleyball.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",

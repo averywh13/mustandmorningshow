@@ -6,24 +6,37 @@ document.addEventListener('DOMContentLoaded', function() {
   
         function updateSportInfo(season) {
           if (sportsData[season]) {
-            const seasonData = sportsData[season];
-  
-            // Clear existing sport buttons
-            const sportsList = document.getElementById('sports-list');
-            sportsList.innerHTML = "";
-  
-            seasonData.sports.forEach((sport, index) => {
-              const sportButton = document.createElement('button');
-              sportButton.classList.add('btn', 'btn-secondary', 'butn');
-              sportButton.innerText = sport.name;
-              sportButton.onclick = () => displaySportCards(season, index);
-              sportsList.appendChild(sportButton);
-            });
-  
-            // Clear sport details when changing seasons
-            document.getElementById('cards-container').style.display = "none"; // Hide cards initially
+              const seasonData = sportsData[season];
+      
+              // Clear existing sport buttons
+              const sportsList = document.getElementById('sports-list');
+              sportsList.innerHTML = "";
+      
+              seasonData.sports.forEach((sport, index) => {
+                  const sportButton = document.createElement('button');
+                  sportButton.classList.add('btn', 'btn-secondary', 'butn');
+      
+                  // Create an image element
+                  const sportImage = document.createElement('img');
+                  sportImage.src = sport.image; // Assuming each sport object has an "image" property
+                  sportImage.alt = sport.name;
+                  sportImage.style.width = "50px"; // Adjust size as needed
+                  sportImage.style.height = "50px";
+      
+                  // Append the image to the button
+                  sportButton.appendChild(sportImage);
+      
+                  // Set button click event
+                  sportButton.onclick = () => displaySportCards(season, index);
+                  
+                  sportsList.appendChild(sportButton);
+              });
+      
+              // Clear sport details when changing seasons
+              document.getElementById('cards-container').style.display = "none"; // Hide cards initially
           }
-        }
+      }
+      
   
         function displaySportCards(season, sportIndex) {
           const sport = sportsData[season].sports[sportIndex];
