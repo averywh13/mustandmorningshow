@@ -131,24 +131,30 @@ function removeEvent(date, index) {
 // Initial setup
 generateCalendar(currentMonth, currentYear);
 
-        // Fetch the letter days from JSON file
-        fetch('schedule.json')
-            .then(response => response.json())
-            .then(data => {
-                const letterDays = data.days;
+fetch('schedule.json')
+    .then(response => response.json())
+    .then(data => {
+        const letterDays = data.days; // Array containing A-G cycle
 
-                // Get the current date
-                const currentDate = new Date();
+        // Get today's date
+        const currentDate = new Date();
+        const dayOfWeek = currentDate.getDay();
 
-                // Calculate the number of days since the start of the year
-                const startDate = new Date(currentDate.getFullYear(), 0, 1); // Jan 1st
-                const daysPassed = Math.floor((currentDate - startDate) / (1000 * 60 * 60 * 24));
+        // Ensure today is a weekday
+        if (dayOfWeek === 0 || dayOfWeek === 6) { 
+            document.getElementById("letterDay").textContent = "No School";
+            return; 
+        }
 
-                // Determine the letter day (A-G cycle)
-                const dayOfWeek = daysPassed % 7;
-                const currentLetterDay = letterDays[dayOfWeek];
+        // Find yesterday's letter day (D) and tomorrow's letter day (F)
+        const yesterdayIndex = letterDays.indexOf("D");
+        const tomorrowIndex = letterDays.indexOf("F");
 
-                // Display the letter day
-                document.getElementById("letterDay").textContent = currentLetterDay;
-            })
-            .catch(error => console.error('Error loading letter days:', error));
+        // If yesterday is D and tomorrow is F, today must be E
+        const todayIndex = (yesterdayIndex + 1) % letterDays.length;
+        const todayLetterDay = letterDays[todayIndex];
+
+        // Display the correct letter day
+        document.getElementById("letterDay").textContent = todayLetterDay;
+    })
+    .catch(error => console.error('Error loading letter days:', error));
