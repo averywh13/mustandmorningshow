@@ -3,7 +3,7 @@
       "fall": {
         "sports": [
           {
-            "image": "imgs/crosscountry.png",
+            "image": "imgs/girlscrosscountry.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -43,7 +43,7 @@
             ]
           },
           {
-            "image": "imgs/volleyball.png",
+            "image": "imgs/girlsvolleyball.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -83,7 +83,7 @@
             ]
           },
           {
-            "image": "imgs/tennis.png",
+            "image": "imgs/girlstennis.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -103,7 +103,7 @@
             ]
           },
           {
-            "image": "imgs/soccer.png",
+            "image": "imgs/girlsoccer.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -194,7 +194,7 @@
             ]
           },
           {
-          "image": "imgs/basketball.png",
+          "image": "imgs/girlsbasketball.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -385,7 +385,7 @@
             ]
           },
           {
-            "image": "imgs/golf.png",
+            "image": "imgs/girlsgolf.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -425,7 +425,7 @@
             ]
           },
           {
-            "image": "imgs/lacrosse.png",
+            "image": "imgs/girlslacrosse.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -445,7 +445,7 @@
             ]
           },
           {
-            "image": "imgs/baseball.png",
+            "image": "imgs/softball.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",
@@ -505,7 +505,7 @@
             ]
           },
           {
-            "image": "imgs/crosscountry.png",
+            "image": "imgs/girlscrosscountry.png",
             "cards": [
               {
                 "image": "https://picsum.photos/200/300",

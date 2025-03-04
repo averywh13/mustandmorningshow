@@ -118,10 +118,10 @@ body {
     font-size: 30px;
     border-radius: 10px;
 }
-.butn:hover{
+/* .butn:hover{
     background-color:rgb(112, 112, 34);
     border: 3px solid rgb(11, 11, 101);
-}
+} */
 .buttonrow{
     margin-top: 200px;
 }
