@@ -127,11 +127,8 @@ body {
   .episode-img:hover {
     transform: scale(1.05);
   }
-  .modal-dialog{
-    width: 1000px;
-  }
 
-
+  
   .news-ticker {
     position: fixed;
     bottom: 0;
