@@ -58,7 +58,7 @@ body {
     border-radius: 5px;
 }
 
-.container{
+.container1{
     margin-left:0;
 }
 
@@ -288,11 +288,11 @@ height: 500px;
 }
 .social-icons a.facebook:hover
 {
-  background-color:#3b5998
+  background-color:#ff0000
 }
 .social-icons a.twitter:hover
 {
-  background-color:#00aced
+  background-color:#e100ff
 }
 .social-icons a.linkedin:hover
 {

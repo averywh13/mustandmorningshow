@@ -1,160 +1,63 @@
-let today = new Date();
-let currentMonth = today.getMonth();
-let currentYear = today.getFullYear();
-const events = JSON.parse(localStorage.getItem("schedule")) || {}; // Load events from localStorage or initialize empty
+let currentDate = new Date(2025, 2, 28); // March 28, 2025, Friday
+    const letterDays = ['A', 'B', 'C', 'D', 'E', 'F', 'G']; // Rotating letter days
 
-const monthNames = [
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
-];
+    // Start with March 28, 2025, as a B day
+    let startingLetterDayIndex = 1; // March 28, 2025, Friday is a 'B' day
 
-// Function to save events to localStorage
-function saveEvents() {
-    localStorage.setItem("schedule", JSON.stringify(events));
-}
+    // Function to render the calendar
+    function renderCalendar() {
+        const monthYear = document.getElementById("monthYear");
+        const calendarDays = document.getElementById("calendarDays");
+        const month = currentDate.getMonth();
+        const year = currentDate.getFullYear();
+        const firstDay = new Date(year, month, 1).getDay();
+        const lastDate = new Date(year, month + 1, 0).getDate();
 
-// Function to generate the calendar
-function generateCalendar(month, year) {
-    const calendar = document.getElementById("calendar");
-    calendar.innerHTML = "";
-    document.getElementById("monthYear").innerText = `${monthNames[month]} ${year}`;
+        // Update the month and year in the header
+        monthYear.textContent = new Intl.DateTimeFormat("en-US", { month: "long", year: "numeric" }).format(currentDate);
 
-    const daysInMonth = new Date(year, month + 1, 0).getDate();
-    const firstDay = new Date(year, month, 1).getDay();
+        // Clear the calendar days
+        calendarDays.innerHTML = "";
 
-    const weekDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-
-    weekDays.forEach(day => {
-        let dayHeader = document.createElement("div");
-        dayHeader.classList.add("day-header");
-        dayHeader.innerText = day;
-        calendar.appendChild(dayHeader);
-    });
-
-    for (let i = 0; i < firstDay; i++) {
-        let emptyCell = document.createElement("div");
-        emptyCell.classList.add("day");
-        calendar.appendChild(emptyCell);
-    }
-
-    for (let day = 1; day <= daysInMonth; day++) {
-        let dayCell = document.createElement("div");
-        dayCell.classList.add("day");
-        dayCell.innerText = day;
-        const dateString = `${year}-${(month + 1).toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
-
-        // Check if there's an event for this day
-        if (events[dateString]) {
-            // Add event indicator (dot) in the top-right corner of the cell
-            let eventIndicator = document.createElement("div");
-            eventIndicator.classList.add("event-indicator");
-            dayCell.appendChild(eventIndicator);
-
-            // Display the events on the day
-            events[dateString].forEach((event, index) => {
-                let eventElement = document.createElement("div");
-                eventElement.classList.add("event");
-                eventElement.innerHTML = `
-                    ${event}
-                    <button class="close-btn" onclick="removeEvent('${dateString}', ${index})">&times;</button>
-                `;
-                dayCell.appendChild(eventElement);
-            });
+        // Empty cells before the first day of the month
+        for (let i = 0; i < firstDay; i++) {
+            calendarDays.innerHTML += '<div></div>';
         }
 
-        if (day === today.getDate() && month === today.getMonth() && year === today.getFullYear()) {
-            dayCell.classList.add("today");
+        // Set the letter day starting index based on March 28, 2025
+        let letterDayIndex = startingLetterDayIndex;
+
+        // Loop through all the days in the current month
+        for (let day = 1; day <= lastDate; day++) {
+            const currentDateObj = new Date(year, month, day);
+            const dayOfWeek = (firstDay + day - 1) % 7; // Day of the week for this day
+            let className = "day";
+
+            if (dayOfWeek !== 6 && dayOfWeek !== 0) { // Skip weekends (Saturday=6, Sunday=0)
+                // Show letter day for weekdays
+                className += " letter-day";
+                calendarDays.innerHTML += `<div class="${className}"><span>${letterDays[letterDayIndex]}</span>${day}</div>`;
+                
+                // Increment letter day index for the next weekday
+                letterDayIndex = (letterDayIndex + 1) % letterDays.length;
+            } else {
+                // Weekends are just dates without letter days
+                calendarDays.innerHTML += `<div class="${className}">${day}</div>`;
+            }
         }
-        dayCell.dataset.date = dateString;
-        calendar.appendChild(dayCell);
-    }
-}
-
-// Function to handle previous month navigation
-function prevMonth() {
-    currentMonth--;
-    if (currentMonth < 0) {
-        currentMonth = 11;
-        currentYear--;
-    }
-    generateCalendar(currentMonth, currentYear);
-}
-
-// Function to handle next month navigation
-function nextMonth() {
-    currentMonth++;
-    if (currentMonth > 11) {
-        currentMonth = 0;
-        currentYear++;
-    }
-    generateCalendar(currentMonth, currentYear);
-}
-
-// Function to add a new event
-function addEvent() {
-    const date = document.getElementById("eventDate").value;
-    const eventText = document.getElementById("eventText").value;
-    if (!date || !eventText) {
-        alert("Please select a date and enter an event description.");
-        return;
     }
 
-    if (!events[date]) {
-        events[date] = [];
-    }
-    events[date].push(eventText);
-
-    // Save the updated events to localStorage
-    saveEvents();
-
-    // Update the calendar UI
-    generateCalendar(currentMonth, currentYear);
-}
-
-// Function to remove an event
-function removeEvent(date, index) {
-    // Remove the event at the specified index for the given date
-    events[date].splice(index, 1);
-
-    // If no events are left for this date, delete the date entry
-    if (events[date].length === 0) {
-        delete events[date];
+    // Move to previous month
+    function prevMonth() {
+        currentDate.setMonth(currentDate.getMonth() - 1);
+        renderCalendar();
     }
 
-    // Save the updated events to localStorage
-    saveEvents();
+    // Move to next month
+    function nextMonth() {
+        currentDate.setMonth(currentDate.getMonth() + 1);
+        renderCalendar();
+    }
 
-    // Update the calendar UI
-    generateCalendar(currentMonth, currentYear);
-}
-
-// Initial setup
-generateCalendar(currentMonth, currentYear);
-
-fetch('schedule.json')
-    .then(response => response.json())
-    .then(data => {
-        const letterDays = data.days; // Array containing A-G cycle
-
-        // Get today's date
-        const currentDate = new Date();
-        const dayOfWeek = currentDate.getDay();
-
-        // Ensure today is a weekday
-        if (dayOfWeek === 0 || dayOfWeek === 6) { 
-            document.getElementById("letterDay").textContent = "No School";
-            return; 
-        }
-
-        // Find yesterday's letter day (D) and tomorrow's letter day (F)
-        const yesterdayIndex = letterDays.indexOf("D");
-        const tomorrowIndex = letterDays.indexOf("F");
-
-        // If yesterday is D and tomorrow is F, today must be E
-        const todayIndex = (yesterdayIndex + 1) % letterDays.length;
-        const todayLetterDay = letterDays[todayIndex];
-
-        // Display the correct letter day
-        document.getElementById("letterDay").textContent = todayLetterDay;
-    })
-    .catch(error => console.error('Error loading letter days:', error));
+    // Initialize the calendar rendering
+    renderCalendar();

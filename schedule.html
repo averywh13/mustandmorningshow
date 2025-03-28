@@ -67,40 +67,16 @@
 
 
 
-
-        
-        <div class="container mt-4">
-            <div class="row">
-                <!-- Calendar Container -->
-                <div class="col-md-8 d-flex flex-column align-items-center calendar-container text-center">
-                    <div class="d-flex justify-content-between w-100 mb-3">
-                        <button class="btn butnprev" onclick="prevMonth()">Previous</button>
-                        <h2 id="monthYear"></h2>
-                        <button class="btn butnnext" onclick="nextMonth()">Next</button>
-                    </div>
-        
-                    <div class="calendar w-100" id="calendar">
-                        <!-- Calendar will be generated here -->
-                    </div>
-        
-                    <div class="event-input justify-content-center mt-3 w-75">
-                        <input type="date" id="eventDate" class="form-control butnadd">
-                        <input type="text" id="eventText" class="form-control butnadd mt-2" placeholder="Event Description">
-                        <button class="btn butnaddevent mt-2" onclick="addEvent()">Add Event</button>
-                    </div>
+        <div class="container mt-5">
+            <div class="calendar">
+                <div class="calendar-header">
+                    <button class="btn btn-outline-primary" onclick="prevMonth()">&#9665;</button>
+                    <h4 class="mx-5"id="monthYear"></h4>
+                    <button class="btn btn-outline-primary" onclick="nextMonth()">&#9655;</button>
                 </div>
-        
-                <!-- Letter Day Container -->
-                <div class="col-md-4 d-flex flex-column align-items-center justify-content-center text-center container23">
-                    <h1>Today is a...</h1>
-                    <p class="letter-day display-3 fw-bold text-primary" id="letterDay">Loading...</p>
-                    <h1>Day.</h1>
-                </div>
+                <div class="days" id="calendarDays"></div>
             </div>
         </div>
-        
-        
-        
         
         
         
@@ -119,61 +95,31 @@
 
 
 
-
-
-
-<!-- Site footer -->
-<!-- <footer class="site-footer">
-    <div class="container8">
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6">
-          <h6>About</h6>
-          <p class="text-justify">rthsrtsrthsth<i>ststhsthsths</i> hsrthsthsthrhstjstyjsrgs;rga;erng;aenrg;an;garga;ergn;aneg</p>
-        </div>
-
-        <div class="col-xs-6 col-md-3">
-          <h6>Categories</h6>
-          <ul class="footer-links">
-            <li><a href="http://scanfcode.com/category/c-language/">ABC</a></li>
-            <li><a href="http://scanfcode.com/category/front-end-development/">ABC</a></li>
-            <li><a href="http://scanfcode.com/category/back-end-development/">ABC</a></li>
-            <li><a href="http://scanfcode.com/category/java-programming-language/">ABC</a></li>
-            <li><a href="http://scanfcode.com/category/android/">ABC</a></li>
-            <li><a href="http://scanfcode.com/category/templates/">ABC</a></li>
-          </ul>
-        </div>
-
-        <div class="col-xs-6 col-md-3">
-          <h6>Quick Links</h6>
-          <ul class="footer-links">
-            <li><a href="http://scanfcode.com/about/">About Us</a></li>
-            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
-          </ul>
+          <h6>MUSTANG MORNING SHOW</h6>
+          <p class="text-justify">William Werntz</p>
+          <p class="text-justify">wwerntz@frhsd.com</p>
+          <p class="text-justify">95 N Main St, Marlboro Township, NJ 07746</p>
         </div>
       </div>
-      <hr>
     </div>
-    <div class="container9">
+    <div class="container">
       <div class="row">
-        <div class="col-md-8 col-sm-6 col-xs-12">
-          
-          </p>
-        </div>
-
         <div class="col-md-4 col-sm-6 col-xs-12">
           <ul class="social-icons">
             <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li> 
           </ul>
         </div>
       </div>
     </div>
-</footer> -->
+</footer>
+
+
 
 
 
