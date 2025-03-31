@@ -89,8 +89,8 @@ body {
 
 
 .calendar {
-  max-width: 400px;
-margin-left: 500px;
+  max-width: 700px;
+margin-left: 400px;
 margin-bottom: 90px;
 
 
@@ -110,30 +110,31 @@ margin-bottom: 90px;
   gap: 5px;
 }
 .day {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   line-height: 30px;
   text-align: center;
   border-radius: 5px;
-  background-color: #f8f9fa;
+  background-color: #c7ae23;
+  font-size:30px;
 }
 .day.today {
-  background-color: #007bff;
+  background-color: #ffffff;
   color: white;
 }
 .day.letter-day {
-  background-color: #e9ecef;
+  background-color: #004d9b;
 }
 .letter-day span {
   font-weight: bold;
-  font-size: 5rem; /* Very large letter */
+  font-size: 8rem; /* Very large letter */
   display: block;
 }
 .day span {
-  font-size: 1.25rem; /* Regular size for the date */
+  font-size: 3rem; /* Regular size for the date */
 }
 #monthYear{
-  font-size: 2rem;
+  font-size: 3.5rem;
 }
 
 
