@@ -63,18 +63,8 @@ body {
 
 .leftpic{
   width: 900px;
-  margin-left: 740px;
+  margin-left: 340px;
   margin-bottom: -200px;
-}
-
-.stacked-words {
-    font-size: 7rem;
-    line-height: 1.5;
-    writing-mode: horizontal-tb;
-    transform: translateX(20px);
-    font-family: "matrix-ii", serif;
-    font-weight: 800;
-    font-style: normal;
 }
 
 ::-webkit-scrollbar {
@@ -123,6 +113,8 @@ body {
 .carousel{
     width: 900px;
     height: 500px;
+    margin-left: 1300px;
+    margin-top: -400px;
 }
 
 .news-ticker {
