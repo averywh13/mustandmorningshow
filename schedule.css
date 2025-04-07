@@ -60,15 +60,12 @@ body {
 .container1{
     margin-left:0;
 }
+.leftpic{
+  width: 900px;
+  margin-left: 740px;
+  margin-bottom: -200px;
+}
 
-.leftpic {
-    max-width: 100%;
-    margin-left: 0;
-}
-.rightpic{
-    width: 950px;
-    height: 550px;
-}
 ::-webkit-scrollbar {
     width: 20px;
 }
@@ -89,8 +86,9 @@ body {
 
 
 .calendar {
-  max-width: 700px;
-margin-left: 400px;
+  max-width: 1000px;
+  margin-top:300px;
+margin-left: 750px;
 margin-bottom: 90px;
 
 

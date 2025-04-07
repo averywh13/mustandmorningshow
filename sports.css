@@ -61,16 +61,11 @@ body {
     margin-left:0;
 }
 
-.leftpic {
-    max-width: 100%;
-    margin-left: 0;
-
+.leftpic{
+  width: 900px;
+  margin-left: 740px;
+  margin-bottom: -200px;
 }
-.rightpic{
-    width: 950px;
-    height: 550px;
-}
-
 
 .stacked-words {
     font-size: 7rem;
